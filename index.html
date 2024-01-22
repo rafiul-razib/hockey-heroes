@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'orange': '#FF4240',
+                'gray': '#424247',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/e2208cf289.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    
+</head>
+<body class="font-manrope">
+    <header class="max-w-[1170px] mx-auto">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a><span class="text-orange">Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl font-extrabold">Hockey<span class="-mx-2 text-orange">&#8217</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base font-bold text-gray">
+                <li><a><span class="text-orange">Home</span></a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class=" flex justify-center gap-6 items-center">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>   
+                    <button class="btn bg-orange text-white text-xl font-bold">Get Ticket</button>
+                </div>
+            </div>
+          </div>
+
+          <!-- Carousel -->
+          <div class="relative">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-start gap-2 bottom-10 left-10">
+                <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/r3.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-start gap-2 bottom-10 left-10">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/r1.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-start gap-2 bottom-10 left-10">
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/r2.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-start gap-2 bottom-10 left-10">
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-black text-white space-y-4 p-8 rounded-2xl w-[502px] absolute bottom-8 right-8">
+            <h3 class="text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-base text-justify font-medium text-[#FFFFFF]">Skilled, agile, fierce competitors on ice. Precision stick handling, powerful shots. Team camaraderie, relentless spirit. Hockey players epitomize sportsmanship.</p>
+          </div>
+
+        </div>  
+
+    </header>
+
+    <section class="container mx-auto">
+
+    </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
